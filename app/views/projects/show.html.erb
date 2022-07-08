@@ -12,6 +12,10 @@
 </div>
 <br>
 <div>
-  <%= button_to "Destroy", @project, method: :delete %>
+ 
+ <%= button_to 'Destroy', project_path, method: :delete,
+  form: {data: {turbo_confirm: 'Are you sure?'}} %>
+
+
 </div>
 

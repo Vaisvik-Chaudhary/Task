@@ -2,7 +2,7 @@
     <div class="row">
         <% if project.file.image? %>
             <div class="message-image-container">
-                <%= image_tag(project.file, class:"message-image")%>
+                <%= image_tag(project.file, class:"message-image",size:"200x200")%>
             </div>
             <% elsif project.file.video? %>
                 <%= video_tag(url_for(project.file), class:"message-video", controls: "") %>
